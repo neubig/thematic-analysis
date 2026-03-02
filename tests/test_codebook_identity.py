@@ -1,7 +1,5 @@
 """Tests for codebook object identity (regression tests for falsy codebook bug)."""
 
-import pytest
-
 from thematic_analysis.agents import (
     CodeAggregatorAgent,
     CoderAgent,

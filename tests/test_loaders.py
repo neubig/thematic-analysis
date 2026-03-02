@@ -54,9 +54,7 @@ class TestLoadTextFile:
 
     def test_load_text_file(self):
         """Test loading a plain text file."""
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".txt", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
             f.write("This is test content.\n\nAnother paragraph here.")
             f.flush()
 
@@ -98,9 +96,7 @@ class TestLoadDocument:
 
     def test_load_document_txt(self):
         """Test auto-detecting text file."""
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".txt", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
             f.write("Test content")
             f.flush()
 
@@ -109,9 +105,7 @@ class TestLoadDocument:
 
     def test_load_document_md(self):
         """Test auto-detecting markdown file."""
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".md", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".md", delete=False) as f:
             f.write("# Heading\n\nContent here.")
             f.flush()
 
